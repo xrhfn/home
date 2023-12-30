@@ -31,6 +31,7 @@
           border: 2px solid #EE4B2B;
           color: white; 
           padding: 16px 40px;
+          transition-duration: 0.4s;
           text-align: center;
           text-decoration: none;
           display: inline-block;
@@ -44,6 +45,12 @@
           background-color: #EE4B2B;
           color: white;
           box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          transform: scale(1.1);
+        }
+
+        .button2:hover {
+          color: white;
+          transform: scale(1.1);
         }
 
         .button2 {
@@ -52,6 +59,7 @@
           color: white; 
           padding: 16px 40px;
           text-align: center;
+          transition-duration: 0.4s;
           text-decoration: none;
           display: inline-block;
           font-size: 16px;
@@ -62,14 +70,19 @@
 
         main {
             padding: 20px;
+            flex: 1;
         }
 
         body {
             font-family: 'Borsok';
-            background-color: #29292e;
+            background: linear-gradient(to bottom, #29292e, #121214);
             color: #fff;
             margin: 0;
             padding: 0;
+            min-height: 100vh; /* Ensure the background covers the entire viewport height */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+            display: flex;
+            flex-direction: column;
         }
 
         footer {
@@ -80,11 +93,37 @@
         .title {
             font-size: 100px;
             text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .title2 {
+            font-size: 30px;
+            text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .title:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.1); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
+        }
+
+        .title2:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.05); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
         }
 
         .footer {
             font-size: 20px;
             text-align: center;
+            transition-duration: 0.4s;
+        }
+
+        .footer:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow on hover */
+            transform: scale(1.1); /* Increase the size on hover */
+            transition-duration: 0.4s; /* Add transition for smooth effect */
         }
 
         .box {
@@ -102,12 +141,18 @@
             font-size: 100px; /* Set the font size as per your design */
         }
 
+        .box:hover {
+            transform: scale(1.1); /* Increase the size on hover */
+        }
+
         .hovering {
             background-color: #EE4B2B;
+            transform: scale(1.1);
         }
 
         .notHovering {
             background-color: transparent; 
+            transform: scale(1);
         }
     </style>
 </head>
@@ -118,6 +163,7 @@
     
     <main>
         <h1 class="title">X R H</h1>
+        <p class="title2">Embark on a Fortnite journey with XRH. Where skill paves the way. Join us for a unique Fortnite experience that stands out from the rest.</p>
         <center>
             <div class="box" style="background-color: transparent;" id="secure-box">
                 <button class="button" style="font-size: 100;" onclick="redirect('https://forms.gle/yhTEXejC2pYERboa7')">T r y o u t s</button> 
@@ -134,7 +180,7 @@
     </main>
 
     <footer>
-        <h1 class="footer"></h1>
+        <p class="footer">XRH a Fortnite Clan 2023©</p>
     </footer>
 
     <script>
